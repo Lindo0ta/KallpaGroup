@@ -1,13 +1,13 @@
-import { LuPlane, LuLeaf, LuWind, LuCompass, LuGraduationCap, LuBrainCircuit, LuClipboardCheck, LuWheat, LuCamera } from 'react-icons/lu'
+import { LuPlane, LuBrainCircuit, LuClipboardCheck, LuWheat, LuCamera } from 'react-icons/lu'
 
 export const NAV = ['Inicio', 'Nosotros', 'Servicios', 'Proyectos', 'Contacto']
 
 export const LINES = [
   { Icon: LuPlane, title: 'Ingeniería aeronáutica', text: 'Soluciones técnicas y proyectos aeronáuticos.' },
-  { Icon: LuLeaf, title: 'Proyectos agro sostenibles', text: 'Desarrollo rural y agricultura de precisión.' },
-  { Icon: LuWind, title: 'Energías renovables', text: 'Energía limpia para un mejor mañana.' },
-  { Icon: LuCompass, title: 'Medición', text: 'Servicios de medición y análisis técnico.' },
-  { Icon: LuGraduationCap, title: 'Capacitación', text: 'Formación técnica y transferencia de conocimiento.' },
+  { img: '/hoja-icon.png', title: 'Proyectos agro sostenibles', text: 'Desarrollo rural y agricultura de precisión.' },
+  { img: '/eolica-icon.png', title: 'Energías renovables', text: 'Energía limpia para un mejor mañana.' },
+  { img: '/reloj-icon.png', title: 'Medición', text: 'Servicios de medición y análisis técnico.' },
+  { img: '/gorro-icon.png', title: 'Capacitación', text: 'Formación técnica y transferencia de conocimiento.' },
 ]
 
 export const SERVICES = [
