@@ -22,7 +22,7 @@ h1, h2, h3, p { margin: 0; }
 img { max-width: 100%; }
 
 .frame { background: var(--azul-profundo); color: #fff; }
-.logo { height: 44px; color: #fff; }
+.logo { height: 72px; color: #fff; }
 
 .btn { display: inline-block; padding: .7rem 1.6rem; border: 1px solid transparent; border-radius: 8px; font-weight: 600; }
 .btn-green { background: linear-gradient(var(--verde-hoja), var(--verde-bosque)); color: #fff; }
@@ -33,13 +33,11 @@ img { max-width: 100%; }
 .burger { display: none; background: none; border: 0; color: #fff; font-size: 1.7rem; cursor: pointer; }
 
 .hero {
-  overflow: clip; position: relative; display: flex; align-items: center; min-height: min(85vh, 680px); padding: 4rem var(--pad);
-  background: linear-gradient(90deg, rgba(11,35,65,.85), rgba(11,35,65,.1)), url(/img/hero.jpg) center / cover var(--azul-acero);
+  overflow: clip; position: relative; display: flex; align-items: center; aspect-ratio: 1672 / 802; padding: 4rem var(--pad);
+  background: linear-gradient(90deg, var(--azul-profundo) 5%, rgba(11,35,65,.85) 35%, rgba(11,35,65,0) 75%), url(/avion_1.png) center / cover var(--azul-acero);
 }
-.hero::before, .hero::after { content: ''; position: absolute; top: 0; bottom: 0; right: 0; }
-.hero::before { width: 24%; background: linear-gradient(var(--verde-hoja), var(--verde-bosque)); clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 100%); }
-.hero::after { width: 22%; background: linear-gradient(var(--azul-profundo), var(--azul-acero)); clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%); }
 .hero-content { position: relative; z-index: 1; max-width: min(560px, 100%); }
+
 .hero h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; }
 .hero p { margin: 1rem 0 1.5rem; color: var(--gris-claro); line-height: 1.5; }
 .actions { display: flex; gap: 1rem; flex-wrap: wrap; }
@@ -48,7 +46,8 @@ img { max-width: 100%; }
 .lines h2 { margin-bottom: 1.2rem; }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 1rem; }
 .card { display: flex; flex-direction: column; gap: .6rem; padding: 1.2rem; background: #fff; border-radius: 12px; box-shadow: 0 4px 16px rgba(11,35,65,.08); }
-.card-icon { font-size: 2rem; color: var(--azul-acero); }
+.card-icon { width: 2.5rem; height: 2.5rem; color: var(--azul-acero); }
+img.card-icon { object-fit: contain; align-self: flex-start; flex: none; }
 .card h3 { font-size: 1rem; }
 .card p { font-size: .8rem; color: var(--gris-ingenieria); flex: 1; }
 .card-arrow { color: var(--verde-bosque); }
@@ -145,7 +144,6 @@ img { max-width: 100%; }
   .header nav { display: none; position: absolute; inset: 100% 0 auto; z-index: 5; flex-direction: column; gap: 1rem; padding: 1.2rem var(--pad); background: var(--azul-profundo); border-top: 1px solid var(--azul-acero); }
   .header nav.open { display: flex; }
   .hero { padding: 3rem var(--pad); }
-  .hero::before, .hero::after { width: 35%; opacity: .6; }
   .lines, .services, .impact { padding-block: 2.5rem; }
   .panel { padding: 1.3rem; border-radius: 22px; }
 }

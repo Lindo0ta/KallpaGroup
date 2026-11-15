@@ -5,7 +5,7 @@ export default ({ as: Tag = 'div', from = 'up', delay = 0, className = '', ...pr
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([{ isIntersecting }]) => isIntersecting && (ref.current.classList.add('in'), observer.disconnect()),
+      ([{ isIntersecting }]) => ref.current.classList.toggle('in', isIntersecting),
       { threshold: 0.15 }
     )
     observer.observe(ref.current)

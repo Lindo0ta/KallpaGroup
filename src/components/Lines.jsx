@@ -6,9 +6,9 @@ export default () => (
   <section className="lines">
     <h2>Nuestras líneas de negocio</h2>
     <div className="cards">
-      {LINES.map(({ Icon, title, text }, i) => (
+      {LINES.map(({ Icon, img, title, text }, i) => (
         <Reveal as="article" key={title} className="card" delay={i * 100}>
-          <Icon className="card-icon" />
+          {img ? <img src={img} alt="" className="card-icon" /> : <Icon className="card-icon" />}
           <h3>{title}</h3>
           <p>{text}</p>
           <LuArrowRight className="card-arrow" />
